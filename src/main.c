@@ -5,8 +5,8 @@
 int main(int argc, char *argv[argc])
 {
 	if (argc != 2) {
-		printf("invalid argument count, expected 2, got %i", argc);
-		printf("usage: fdf <map>");
+		printf("invalid argument count, expected 2, got %i\n", argc);
+		printf("usage: fdf <map>\n");
 		return EXIT_FAILURE;	
 	}
 	map_t	map;

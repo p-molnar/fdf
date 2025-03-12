@@ -1,4 +1,5 @@
-
+#ifndef MAP__H
+#include <stdio.h>
 typedef struct coord_s
 {
 	int	x;
@@ -17,3 +18,5 @@ typedef struct map_s
 
 
 int	parse_map(char *argv, map_t *map);
+
+#endif

@@ -13,10 +13,10 @@ bool includes_char(char *s, char c) {
 	return false;
 }
 
-get_first_line_length(char *argv) {
+int	get_first_line_length(char *argv) {
 	FILE *fptr = fopen(argv, "r");
 
-	if (!fptr) {perror(errno);}
+	if (!fptr) {perror(strerror(errno));}
 
 	static char tmp[BUFF_SIZE];
 	int len = 0;
@@ -31,6 +31,8 @@ get_first_line_length(char *argv) {
 }
 
 
-int	parse_map(char *argv, map_t *map) {
-
+int	parse_map(char *path, map_t *map) {
+	(void) map;
+	int len = get_first_line_length(path);
+	return 1;
 }
